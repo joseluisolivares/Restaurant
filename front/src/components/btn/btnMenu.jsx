@@ -1,16 +1,16 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 
 const BtnMenu = ({handleClickBtn,btnText}) => {
     
     
     return ( 
         <Fragment>
-           <a 
+           <button 
                 onClick={handleClickBtn}
                 name='menu'
                 className='btn btn-success btnSize text-white'>
                 {btnText}
-            </a>
+            </button>
         </Fragment>
      );
 }

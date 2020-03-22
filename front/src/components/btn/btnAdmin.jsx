@@ -1,16 +1,16 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 
 
 const BtnAdmin = ({handleClickBtn,btnText}) => {
 
     return ( 
         <Fragment>
-           <a 
+           <button 
                 onClick={handleClickBtn}
                 name='admin'
                 className='btn btn-danger text-white'>
                 {btnText}   
-            </a>
+            </button>
         </Fragment>
      );
 }

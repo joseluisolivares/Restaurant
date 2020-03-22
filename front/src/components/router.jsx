@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Admin from './admin';
 import Home from './Home/home';
 import Menu from './menu';
+import Starters from './starters/starters'
+import MainCourses from './mainCourses/MainCourses'
+import Desserts from './desserts/Desserts'
+import Drinks from './drinks/Drinks'
 const Router = () => {
     
     return ( 
@@ -26,6 +30,26 @@ const Router = () => {
                     <Route
                         path="/menu"
                         component={Menu} 
+                    />
+
+                    <Route
+                        path="/entrantes"
+                        component={Starters} 
+                    />
+
+                    <Route
+                        path="/principales"
+                        component={MainCourses} 
+                    />
+
+                    <Route
+                        path="/postres"
+                        component={Desserts} 
+                    />
+
+                    <Route
+                        path="/bebidas"
+                        component={Drinks} 
                     />
 
                 </Switch>
