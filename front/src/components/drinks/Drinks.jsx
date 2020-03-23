@@ -1,10 +1,33 @@
-import React, {Fragment} from 'react';
+import React, {Fragment,useEffect} from 'react';
+import { useHistory } from "react-router-dom";
+import Card from '../cards/card';
+
 
 const Drinks = () => {
-
+    
+    
+    let history = useHistory();
+    let path = history;
+    path = path.location.pathname;
+	console.log(path);
+    
+        
+    useEffect( () => {
+        const urlApi = `http://localhost:4000/api/drinks`;
+        fetch(urlApi)
+            .then( (res) => {
+                return res.json();
+            })
+            .then (res => console.log(res))
+        },[]);
+    
     return ( 
         <Fragment>
-            <h1>Drinks!</h1>
+            <div className="container menuContainer">
+                <Card
+
+                />
+            </div>
         </Fragment>
     );
 }
