@@ -12,32 +12,39 @@
     5.4 => El siguinte paso es crear las colecciones de la base de datos y los documentos.
     5.5 => Para crear la colección de starters escribe en consola: 
     
-        db.starters.insert({"name" : "Alcachofas a la plancha","price" : "10.90€"})
-        db.starters.insert({"name" : "Tartar de tomate","price" : "9.90€"})
-        db.starters.insert({"name" : "Sopa de cebolla","price" : "6.90€"})
-        db.starters.insert({"name" : "Dumplings de Angus en BBQ Japonés","price" : "8.60€"})
-        db.starters.insert({"name" : "Sardinas del Cantábrico ahumadas","price" : "10.80€"})
-        db.starters.insert({"name" : "Tempura picante de bogavante","price" : "15.70€"})
-        db.starters.insert({"name" : "Lomos de salmonete con piel tostada y sal volcánica","price" : "14.90€"})
-        db.starters.insert({"name" : "Anchoas del Cantábrico Doble 0","price" : "11.90€"})
+   
+        db.starters.insert({"name" : "Tartar de tomate","price" : "9.90€", "image" : "https://s3.eestatic.com/2015/08/18/cocinillas/Cocinillas_57254275_116206491_1024x576.jpg"})
+        db.starters.insert({"name" : "Sopa de cebolla","price" : "6.90€", "image": "https://cocina-casera.com/wp-content/uploads/2018/01/sopa-de-cebolla-francesa-3.jpg"})
+        db.starters.insert({"name" : "Dumplings de Angus en BBQ Japonés","price" : "8.60€", "image":'https://media-cdn.tripadvisor.com/media/photo-s/19/23/2e/68/dumplings.jpg})
+        db.starters.insert({"name" : "Sardinas del Cantábrico ahumadas","price" : "10.80€", "image":"https://media-cdn.tripadvisor.com/media/photo-s/11/2c/e5/ae/lomo-de-sardina-ahumada.jpg})
+        db.starters.insert({"name" : "Tempura picante de bogavante","price" : "15.70€","image":"https://www.inoutviajes.com/galerias-noticias/galerias/8613/THELOBSTARRRSS-13.jpg"})
+        db.starters.insert({"name" : "Lomos de salmonete con piel tostada y sal volcánica","price" : "14.90€","image":"https://2.bp.blogspot.com/-YKBDPea4lPc/V4vqq9p2YuI/AAAAAAAAHjA/-zIagIVEM807vXZXNc5_6ZRCY7EhbAmjgCLcB/s1600/20160717_133614.jpg"})
+        db.starters.insert({"name" : "Anchoas del Cantábrico Doble 0","price" : "11.90€", "image":"https://www.alimentacionselecta.com/wp-content/uploads/2015/05/ANCHOAS-00-DE-SANTO%C3%91A-GOURMET-BARATAS-ECONOMICAS-PRECIOS-HECHAS-A-MANO-ENVIOS-A-DOMICILIO-PORTES-GRATIS.jpg"})
 
     5.6 => Para crear la colección de mainCourses escribe en consola: 
 
-        db.maincourses.insert({"name" : "Ostras al natural o con salsa ponzu","price" : "19.90€"})
-        db.maincourses.insert({"name" : "Salpicón de bogavante","price" : "23.90€"})
-        db.maincourses.insert({"name" : "Almejas gallegas a la sartén","price" : "21.00€"})
-        db.maincourses.insert({"name" : "Berberechos de la ría de Noia al vapor","price" : "17.90€"})
-        db.maincourses.insert({"name" : "Navajas de la Ría a la sartén","price" : "32.90€"})
-        db.maincourses.insert({"name" : "Steak Tartare","price" : "24.90€"})
-        db.maincourses.insert({"name" : "Tartar de atún picante","price" : "26.90€"})
-        db.maincourses.insert({"name" : "Tiradito de pez limón a la miel, salsa de ostras y pisco","price" : "28.90€"})
-        db.maincourses.insert({"name" : "Ceviche de corvina salvaje","price" : "18.70€"})
-        db.maincourses.insert({"name" : "Ceviche de langosta","price" : "33.90€"})
-        db.maincourses.insert({"name" : "Carpaccio de lomo de vaca madurada","price" : "23.90€"})
-        db.maincourses.insert({"name" : "Aguachile de zamburiñas","price" : "31.90€"})
-        db.maincourses.insert({"name" : "Tataki de atún de almadraba con ensalada de aguacate","price" : "27.90€"})
-        db.maincourses.insert({"name" : "Arroz 'Chaufa' con pato Pekín y langostinos","price" : "21.50€"})
-        db.maincourses.insert({"name" : "Pluma ibérica con puré de boniato","price" : "26.30€"})
+
+
+
+         db.maincourses.update({_id: ObjectId("5e7489376ed2564677c7a4c3")},{$set:{image:"https://www.ibericommunity.com/wp-content/uploads/2019/07/Pluma-ib%C3%A9rica-2.jpg"}})
+
+
+
+        db.maincourses.insert({"name" : "Ostras al natural o con salsa ponzu","price" : "19.90€","image" : "https://media.timeout.com/images/103339718/630/472/image.jpg"})
+        db.maincourses.insert({"name" : "Salpicón de bogavante","price" : "23.90€","image" : "https://s1.eestatic.com/2017/12/29/cocinillas/Cocinillas_273234737_116459622_1024x576.jpg"})
+        db.maincourses.insert({"name" : "Almejas gallegas a la sartén","price" : "21.00€", "image": "https://www.pescaderiascorunesas.es/sites/default/files/2017-11/Almejas%20a%20la%20sarten02.jpg"})
+        db.maincourses.insert({"name" : "Berberechos de la ría de Noia al vapor","price" : "17.90€", "image":"https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/10/25/15404666555789.jpg"})
+        db.maincourses.insert({"name" : "Navajas de la Ría a la sartén","price" : "32.90€", "image": "https://elcocinerocasero.com/imagen/receta/1000/1000/2017-11-12-20-00/navajas-a-la-marinera.jpeg"})
+        db.maincourses.insert({"name" : "Steak Tartare","price" : "24.90€","image":"https://img.bekiacocina.com/cocina/0000/336-c.jpg"})
+        db.maincourses.insert({"name" : "Tartar de atún picante","price" : "26.90€", "image": "https://bacira.es/wp-content/uploads/2018/01/Tartar-de-atun-picante-con-aguacate-wakame-y-pomelo-rosa-entera-15%E2%82%AC-y-media-racion-8%E2%82%AC.jpg"})
+        db.maincourses.insert({"name" : "Tiradito de pez limón a la miel, salsa de ostras y pisco","price" : "28.90€","image":"https://live.mrf.io/statics/i/ps/www.ecestaticos.com/imagestatic/clipping/9db/0e3/9db0e3c77efb3a5c4f5a1a6e2ece3028/ruta-por-13-de-los-mejores-ceviches-de-madrid.jpg?mtime=1579565836"})
+        db.maincourses.insert({"name" : "Ceviche de corvina salvaje","price" : "18.70€", "image", "5e7489086ed2564677c7a4bd"})
+        db.maincourses.insert({"name" : "Ceviche de langosta","price" : "33.90€", "image" : "https://4.bp.blogspot.com/-0UGYKJlIgro/UgJrbir9s7I/AAAAAAAAAbQ/fBqzIscUwm4/s1600/ceviche_camaron.jpg"})
+        db.maincourses.insert({"name" : "Carpaccio de lomo de vaca madurada","price" : "23.90€", "image":"https://www.codigococina.com/wp-content/uploads/2016/12/como_hacer_carpaccio.jpg"})
+        db.maincourses.insert({"name" : "Aguachile de zamburiñas","price" : "31.90€", "image":"https://media-cdn.tripadvisor.com/media/photo-s/10/fc/a8/6b/aguachile-de-zamburinas.jpg"})
+        db.maincourses.insert({"name" : "Tataki de atún de almadraba con ensalada de aguacate","price" : "27.90€","image":"https://lh4.googleusercontent.com/proxy/_iqePePNJvZkI2eplbCkQ1PprQTJbYCAzqHZEQ2RFVgRQTotI1C4LLUT25qSph7KqWl4QWznR5RK9v56CL2LTr75Z4jd0xcTiGVcS6wd2R_oC6liAaaC1griTTegSqZSvgIsTjnu5Y4IvCo"})
+        db.maincourses.insert({"name" : "Arroz 'Chaufa' con pato Pekín y langostinos","price" : "21.50€","image": "https://micomidaperuana.com/wp-content/uploads/2019/09/aeropuerto-food-peruvian.jpg"})
+        db.maincourses.insert({"name" : "Pluma ibérica con puré de boniato","price" : "26.30€", "image", "https://www.ibericommunity.com/wp-content/uploads/2019/07/Pluma-ib%C3%A9rica-2.jpg"})
 
     5.7 => Para crear la colección de dessserts escribe en consola: 
 
