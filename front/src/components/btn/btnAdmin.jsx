@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import './btn.css';
 
 
 const BtnAdmin = ({handleClickBtn,btnText}) => {
@@ -8,7 +9,7 @@ const BtnAdmin = ({handleClickBtn,btnText}) => {
            <button 
                 onClick={handleClickBtn}
                 name='admin'
-                className='btn btn-danger text-white'>
+                className='btn bg-transparent text-white btnAdmin'>
                 {btnText}   
             </button>
         </Fragment>

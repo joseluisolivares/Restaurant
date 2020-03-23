@@ -1,0 +1,30 @@
+button{
+    text-transform: uppercase;
+    width: 164px;
+}
+.btnAdmin{
+    width:82px;
+}
+.btnMenu{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+    border-radius: 0;
+    width: 60%;
+    font-size: 30px;
+}
+.btnDishes{
+    padding-bottom: 16px;
+    font-size: 20px;
+}
+.btnOrder{
+    text-transform: none;
+    font-size: 20px;
+    padding: 8px 0 0 0;
+}
+.bi-caret-right-fill{
+    color:#fff;
+    font-size: 11px;
+    margin-top: 23px;
+}

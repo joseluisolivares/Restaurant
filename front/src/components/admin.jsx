@@ -25,25 +25,29 @@ const Admin = () => {
 
     return ( 
         <Fragment>
-            <h1>Admin Section</h1>
-            {btnDishes.map( (value) => (
-                <BtnDishes
-                    key={value}
-                    name={value}
-                    btnText={value}
-                    handleClickDishes={handleClickDishes}   
-                />
-            ))}
-            <button 
-                type="button" 
-                className="close" 
-                onClick={ () => history.goBack() }
-                aria-label="Close">
-                <span 
-                    aria-hidden="true">
-                    &times;
-                </span>
-            </button>
+            <div className="container adminContainer d-flex flex-column">
+                <button 
+                    type="button" 
+                    className="close w-100 text-right pt-2 text-white" 
+                    onClick={ () => history.goBack() }
+                    aria-label="Close">
+                    <span 
+                        aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+                <div className="boxItems d-flex flex-column align-items-center pt-5">
+                    {btnDishes.map( (value) => (
+                        <BtnDishes
+                            key={value}
+                            name={value}
+                            btnText={value}
+                            handleClickDishes={handleClickDishes}   
+                        />
+                    ))}
+                </div>
+               
+            </div>
         </Fragment>
      );
 }

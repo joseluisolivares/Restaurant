@@ -2,11 +2,12 @@ import React, {Fragment} from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Admin from './admin';
 import Home from './Home/home';
-import Menu from './menu';
-import Starters from './starters/starters'
-import MainCourses from './mainCourses/MainCourses'
-import Desserts from './desserts/Desserts'
-import Drinks from './drinks/Drinks'
+import Menu from './menu/menu';
+import Starters from './starters/starters';
+import MainCourses from './mainCourses/MainCourses';
+import Desserts from './desserts/Desserts';
+import Drinks from './drinks/Drinks';
+import Order from './order/order';
 const Router = () => {
     
     return ( 
@@ -70,6 +71,11 @@ const Router = () => {
                     <Route
                         path="/bebidas"
                         component={Drinks} 
+                    />
+
+                    <Route
+                        path="/pedido"
+                        component={Order} 
                     />
 
                 </Switch>

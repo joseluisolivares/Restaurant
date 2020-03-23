@@ -1,9 +1,10 @@
 import React, {Fragment} from 'react';
 import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
-import './home.css';
 import BtnAdmin from '../btn/btnAdmin';
 import BtnMenu from '../btn/btnMenu';
+import './home.css';
+
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
                </div>
                <div className="row d-flex wrapperMenu">
                    <div className="col d-flex align-items-center justify-content-center ">
-                   <BtnMenu
+                        <BtnMenu
                             handleClickBtn={handleClickBtn}
                             btnText='Menú'
                         />

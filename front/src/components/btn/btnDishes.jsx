@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import { withRouter } from "react-router";
+import './btn.css';
 
 const BtnDishes = ({handleClickDishes,name,btnText}) => {
     return ( 
@@ -7,7 +8,7 @@ const BtnDishes = ({handleClickDishes,name,btnText}) => {
            <button 
                 name={name}
                 onClick={handleClickDishes}
-                className='btn btn-danger text-white'>
+                className='btn text-white btnDishes bg-transparent text-white'>
                 {btnText}
             </button>
         </Fragment>
