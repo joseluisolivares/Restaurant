@@ -1,8 +1,7 @@
 import React, {Fragment} from 'react';
+import { withRouter } from "react-router";
 
-
-const BtnDishes = ({handleClickDishes,name,btnText,path}) => {
-    console.log(path, '--------');
+const BtnDishes = ({handleClickDishes,name,btnText}) => {
     return ( 
         <Fragment>
            <button 
@@ -14,8 +13,13 @@ const BtnDishes = ({handleClickDishes,name,btnText,path}) => {
         </Fragment>
     );
 }
- 
+
+/** 
+<button onClick={(e) => this.handleClick(e)}>
+<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+ * 
+*/
 /*PROTOTYPES!!*/
 
-export default BtnDishes;
+export default withRouter(BtnDishes);
 

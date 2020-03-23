@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 import BtnDishes from './btn/btnDishes';
@@ -6,22 +6,21 @@ import BtnDishes from './btn/btnDishes';
 
 const Menu = () => {
   let history = useHistory();
-  const path = history.location.pathname;
   const btnDishes = ['entrantes','principales','postres','bebidas']
   const handleClickDishes = (e) => {
     e.preventDefault();
     let namePath = e.target.name;
     if(namePath === 'entrantes'){
-        history.push(`/${namePath}`)
+        history.push(`entrantes`)
     }
     if(namePath === 'principales'){
-        history.push(`/${namePath}`)
+        history.push(`principales`)
     }
     if(namePath === 'postres'){
-        history.push(`/${namePath}`)
+        history.push(`postres`)
     }
     if(namePath === 'bebidas'){
-        history.push(`/${namePath}`)
+        history.push(`bebidas`)
     }
   }
     return ( 
@@ -32,7 +31,6 @@ const Menu = () => {
                     key={value}
                     name={value}
                     btnText={value}
-                    path={path}
                     handleClickDishes={handleClickDishes}   
                 />
             ))}
@@ -40,7 +38,10 @@ const Menu = () => {
      );
 }
  
-/*PROTOTYPES!!*/
-
+Menu.propTypes = {
+    handleClickDishes: PropTypes.func,
+    name: PropTypes.string,
+    btnText: PropTypes.string
+}
 export default Menu;
 

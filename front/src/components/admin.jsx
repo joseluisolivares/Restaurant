@@ -1,26 +1,24 @@
 import React, {Fragment} from 'react';
+import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
 import BtnDishes from './btn/btnDishes';
 
 const Admin = () => {
     let history = useHistory();
-    const path = history.location.pathname;
     const btnDishes = ['entrantes','principales','postres','bebidas']
-
     const handleClickDishes = (e) => {
-        e.preventDefault();
         let namePath = e.target.name;
         if(namePath === 'entrantes'){
-            history.push(`/${namePath}`)
+            history.push(`administrador/entrantes`)
         }
         if(namePath === 'principales'){
-            history.push(`/${namePath}`)
+            history.push(`administrador/principales`)
         }
         if(namePath === 'postres'){
-            history.push(`/${namePath}`)
+            history.push(`administrador/postres`)
         }
         if(namePath === 'bebidas'){
-            history.push(`/${namePath}`)
+            history.push(`administrador/bebidas`)
         }
     }
    
@@ -33,7 +31,6 @@ const Admin = () => {
                     key={value}
                     name={value}
                     btnText={value}
-                    path={path}
                     handleClickDishes={handleClickDishes}   
                 />
             ))}
@@ -51,10 +48,10 @@ const Admin = () => {
      );
 }
  
-/*PROTOTYPES!!
-Home.propTypes = {
-    handleClickBtn: PropTypes.func,
+Admin.propTypes = {
+    handleClickDishes: PropTypes.func,
+    name: PropTypes.string,
     btnText: PropTypes.string
-}*/
+}
 export default Admin;
 

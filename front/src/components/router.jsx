@@ -33,6 +33,26 @@ const Router = () => {
                     />
 
                     <Route
+                        path="/administrador/entrantes"
+                        component={Starters} 
+                    />
+
+                    <Route
+                        path="/administrador/principales"
+                        component={MainCourses} 
+                    />
+
+                    <Route
+                        path="/administrador/postres"
+                        component={Desserts} 
+                    />
+
+                    <Route
+                        path="/administrador/bebidas"
+                        component={Drinks} 
+                    />
+
+                    <Route
                         path="/entrantes"
                         component={Starters} 
                     />
