@@ -4,7 +4,7 @@ button{
     outline: none;
 }
 .btnAdmin{
-    width:82px;
+    width: 82px;
 }
 .btnMenu{
     background: transparent;
@@ -28,4 +28,7 @@ button{
     color:#fff;
     font-size: 11px;
     margin-top: 23px;
+}
+.btnAddItem{
+    font-weight:600;
 }

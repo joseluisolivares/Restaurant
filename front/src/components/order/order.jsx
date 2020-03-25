@@ -7,14 +7,10 @@ const Order = ({dish}) => {
     console.log(dish.price);
      return ( 
           <Fragment>
-               
-          <p className="text-white">
-               <span>{dish.name} </span>
-               <span> {dish.price}</span>
-               
-          </p>
-                  
-              
+               <p className="orderText">
+                    <span>{dish.name} </span>
+                    <span> {dish.price}</span>
+               </p>
           </Fragment>
      );
 }

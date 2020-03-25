@@ -2,13 +2,13 @@ import React, {Fragment} from 'react';
 import './btn.css';
 
 
-const BtnAddItem = ({handleClickBtn,btnText,dish,setDish}) => {
+const BtnAddItem = ({handleClickBtn, btnText, dish, setDish, styleBtn}) => {
     return ( 
         <Fragment>
            <button 
                 onClick={handleClickBtn}
                 name='admin'
-                className='btn bg-transparent btnAdmin'
+                className={styleBtn}
                 dish={dish}
                 setDish={setDish}>
                 {btnText}   

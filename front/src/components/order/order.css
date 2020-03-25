@@ -12,22 +12,32 @@
     position: absolute;
     right: 5px;
     font-size: 40px;
-    background: azure;
-    color: currentColor;
+    background: transparent;
+    color: brown;
     height: 44px;
     top: 5px;
 }
 .OrderContainer{
     max-width:1024px;
     height:auto;
-    background-image: url(../Home/images/home2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    }
+.OrderContainerStarters{
+    background-image: url(./images/starters.jpg);
+}
+.OrderContainerStarters .orderText{
+    color: #000;
 }
 .OrderContainer p{
     margin: 0;
     padding-bottom: 25px;
     padding-left: 12px;
     font-weight: 600;
-   
+}
+.OrderContainerMaincourses{
+    background-image: url(./images/starters.jpg);
+}
+.OrderContainerMaincourses .orderText {
+    color: #000;
 }
