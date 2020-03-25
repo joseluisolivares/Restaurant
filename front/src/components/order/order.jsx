@@ -1,21 +1,18 @@
-import React, {Fragment } from 'react';
-import './order.css';
+import React, { Fragment } from "react";
+import "./order.css";
 
-const Order = ({dish}) => {
+const Order = ({ dish }) => {
+  return (
+    <Fragment>
+      <p className="orderText d-flex justify-content-between align-items-center text-center">
+        <img className="orderImg" src={dish.image} alt="" />
+        <span>{dish.name} </span>
+        <span> {dish.price}</span>
+      </p>
+    </Fragment>
+  );
+};
 
-    console.log(dish.name);
-    console.log(dish.price);
-     return ( 
-          <Fragment>
-               <p className="orderText">
-                    <span>{dish.name} </span>
-                    <span> {dish.price}</span>
-               </p>
-          </Fragment>
-     );
-}
- 
 /*PROTOTYPES!!*/
 
 export default Order;
-

@@ -31,7 +31,6 @@ const MainCourses = () => {
       abortController.abort();
     };
   }, []);
-
   return (
     <Fragment>
       <div className="container menuContainerCard">
