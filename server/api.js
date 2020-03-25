@@ -29,7 +29,7 @@ app.get('/api/:key', function (req, res) {
       res.status(200).send({
         succes: 'true',
         message: 'GET',
-        item: data
+        value: data
       });
     }
   });

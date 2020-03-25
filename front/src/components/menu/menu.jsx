@@ -14,6 +14,7 @@ const Menu = () => {
   const handleClickDishes = (e) => {
     e.preventDefault();
     let namePath = e.target.name;
+  
     if(namePath === 'entrantes'){
         history.push(`${namePath}`)
     }
@@ -27,14 +28,14 @@ const Menu = () => {
         history.push(`${namePath}`)
     }
   }
-  const handleClickOrderBtn = (e) => {
+    const handleClickOrderBtn = (e) => {
         e.preventDefault();
         console.log(e.target.name);
         const namePath = e.target.name;
         if(namePath === 'pedido'){
             history.push(`${namePath}`)
         }
-  }
+    }
     return ( 
         <Fragment>
             <div className="container menuContainer">

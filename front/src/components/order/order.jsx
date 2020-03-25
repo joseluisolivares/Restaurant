@@ -1,13 +1,21 @@
-import React, {Fragment} from 'react';
+import React, {Fragment } from 'react';
 import './order.css';
 
-const Order = ({handleClickOrderBtn,btnText}) => {
-    
-    
-    return ( 
-        <Fragment>
-          <h1>Order page!</h1>
-        </Fragment>
+const Order = ({dish}) => {
+
+    console.log(dish.name);
+    console.log(dish.price);
+     return ( 
+          <Fragment>
+               
+          <p className="text-white">
+               <span>{dish.name} </span>
+               <span> {dish.price}</span>
+               
+          </p>
+                  
+              
+          </Fragment>
      );
 }
  

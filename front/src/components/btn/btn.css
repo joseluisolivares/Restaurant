@@ -1,6 +1,7 @@
 button{
     text-transform: uppercase;
     width: 164px;
+    outline: none;
 }
 .btnAdmin{
     width:82px;

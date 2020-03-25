@@ -1,13 +1,14 @@
 import React, {Fragment} from 'react';
 import './btn.css';
 
-const BtnOrder = ({handleClickOrderBtn,btnText,name}) => {
-    
+const BtnOrder = ({handleClickOrderBtn,btnText,name,dish}) => {
+    console.log(dish);
     
     return ( 
         <Fragment>
            <button 
                 onClick={handleClickOrderBtn}
+                dish={dish}
                 name={name}
                 className='btn bg-transparent text-white btnOrder text-right w-100 pt-3'>
                 {btnText}
