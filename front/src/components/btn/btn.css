@@ -19,11 +19,7 @@ button{
     padding-bottom: 16px;
     font-size: 20px;
 }
-.btnOrder{
-    text-transform: none;
-    font-size: 20px;
-    padding: 8px 0 0 0;
-}
+
 .bi-caret-right-fill{
     color:#fff;
     font-size: 11px;

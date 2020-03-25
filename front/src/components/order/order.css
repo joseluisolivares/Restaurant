@@ -70,3 +70,6 @@
 .OrderContainerDrinks .colorMainTitle{
     color: #000
 }
+.orderText{
+    margin-bottom:25px;
+}
