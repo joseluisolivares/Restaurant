@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Card from "../cards/card";
 import Order from "../order/order";
+import Modify from "../modify/Modify";
 import "./starters.css";
 
 const Starters = () => {
@@ -75,7 +76,7 @@ const Starters = () => {
           data-toggle="modal"
           data-target="#exampleModal"
         >
-          {orderText}
+          {orderText} 
         </button>
 
         <div
@@ -103,9 +104,16 @@ const Starters = () => {
                   {titleText}
                 </h1>
                 <p className="lead">
-                  {dish.map((item, index) => (
-                    <Order key={index} dish={item} />
-                  ))}
+                {path === '/administrador/entrantes' 
+                  ?  
+                    dish.map((item, index) => (
+                      <Modify key={index} dish={item} />
+                    )) 
+                  : 
+                    dish.map((item, index) => (
+                      <Order key={index} dish={item} />
+                    )) 
+                  }
                 </p>
               </div>
             </div>
