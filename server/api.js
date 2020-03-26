@@ -70,11 +70,12 @@ app.delete('/api/:key/:id',  (req, res) => {
 //Post
 app.post('/api/:key', function (req, res) {
   callToDataBase(req);
-  const {name, price,password} = req.body;
+  const {name, price,password,image} = req.body;
   item = new item({
     name: name,
     price: price,
-    password: password
+    password: password,
+    image: image
   });
   item.save( (err, data) => {
       if(err){
@@ -97,10 +98,11 @@ app.put('/api/:key/:id',  (req, res) => {
       console.log('ERROR someting is wrongg!');
       console.log(err);
     }else{
-      const {name, price, password} = req.body;
+      const {name, price, password,image} = req.body;
       data.name = name ? name : data.name;
       data.price = price ? price : data.price;
       data.password = password ? password : data.password;
+      data.image = image ? image : data.image;
       data.save( (err) => {
         if(err){
           console.log('ERROR someting is wrongg!')

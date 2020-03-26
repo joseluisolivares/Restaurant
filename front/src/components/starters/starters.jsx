@@ -103,18 +103,18 @@ const Starters = () => {
                 <h1 className="display-4 text-center pt-5 colorStartersTitle">
                   {titleText}
                 </h1>
-                <p className="lead">
+                <div className="lead">
                 {path === '/administrador/entrantes' 
                   ?  
-                    dish.map((item, index) => (
-                      <Modify key={index} dish={item} />
-                    )) 
+                    
+                      <Modify  dish={dish}/>
+                    
                   : 
                     dish.map((item, index) => (
                       <Order key={index} dish={item} />
                     )) 
                   }
-                </p>
+                </div>
               </div>
             </div>
           </div>

@@ -30,15 +30,15 @@ const Card = ({value, dish, setDish}) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text d-flex align-items-center justify-content-between">
-                        <p className=" text-dark mb-0">Precio: <strong>{price}</strong></p>
+                        <span className=" text-dark mb-0">Precio: <strong>{price}</strong></span>
                         {path === '/administrador/entrantes' 
                             ? 
                                 <BtnModifyItem
-                                handleClickBtn={handleClickBtn}
-                                btnText={btnText}
-                                dish={dish}
-                                styleBtn={styleBtn}
-                                setDish={setDish}
+                                    handleClickBtn={handleClickBtn}
+                                    btnText={btnText}
+                                    dish={dish}
+                                    styleBtn={styleBtn}
+                                    setDish={setDish}
                                 />
                             :
                                 <BtnAddItem

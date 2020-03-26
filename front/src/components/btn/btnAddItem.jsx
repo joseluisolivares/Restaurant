@@ -9,8 +9,7 @@ const BtnAddItem = ({handleClickBtn, btnText, dish, setDish, styleBtn}) => {
                 onClick={handleClickBtn}
                 name='admin'
                 className={styleBtn}
-                dish={dish}
-                setDish={setDish}>
+                dish={dish}>
                 {btnText}   
             </button>
         </Fragment>

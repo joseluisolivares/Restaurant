@@ -5,6 +5,7 @@ import BtnDishes from './btn/btnDishes';
 
 const Admin = () => {
     let history = useHistory();
+    const btnTextValidate = 'Entrar';
     const btnDishes = ['entrantes','principales','postres','bebidas']
     const [data, setData] = useState({
         user: '',
@@ -45,20 +46,23 @@ const Admin = () => {
             <div className="containerAdmin" ref={form}>
                 <form>
                     <div className="form-group">
-                        <label for="exampleInputEmail1">User</label>
+                        <label>User</label>
                         <input 
                         type="email" 
-                        className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        className="form-control" 
+                        id="exampleInputEmail1" 
+                        aria-describedby="emailHelp"
                         name="user"
                         onChange={handleChangeInput}/>
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputPassword1">Password</label>
+                        <label>Password</label>
                         <input type="password" className="form-control" id="exampleInputPassword1"
                         name="password"
                         onChange={handleChangeInput}/>
                     </div>
                 </form>
+                <button className="btn btn-info" onClick={handleChangeInput}>{btnTextValidate}</button>
             </div>
             <div className="container adminContainer d-flex flex-column">
                 <button 
