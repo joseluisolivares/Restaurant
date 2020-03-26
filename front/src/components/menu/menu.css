@@ -14,4 +14,10 @@
     background-color: #fff;
     padding:16px;
 }
+.close.w-100.text-right.pt-2.text-black.closeMenu{
+    color:#fff;
+    opacity:1;
+    right:10px;
+    font-size: 30px;
+}
 

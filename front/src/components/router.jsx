@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Admin from './admin';
+import Admin from '../components/admin/admin';
 import Home from './Home/home';
 import Menu from './menu/menu';
 import Starters from './starters/starters';

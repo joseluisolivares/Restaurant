@@ -9,7 +9,7 @@ const Starters = () => {
   const [starters, setStarters] = useState([]);
   const [dish, setDish] = useState([""]);
   const orderText = "Ver entrantes seleccionados";
-  const titleText = 'ENTRANTES';
+  const titleText = "ENTRANTES";
   let history = useHistory();
   let path = history;
   path = path.location.pathname;
@@ -27,7 +27,6 @@ const Starters = () => {
       })
       .then(res => {
         setStarters(res.value);
-        console.log(res);
       });
     return () => {
       abortController.abort();
@@ -76,7 +75,7 @@ const Starters = () => {
           data-toggle="modal"
           data-target="#exampleModal"
         >
-          {orderText} 
+          {orderText}
         </button>
 
         <div
@@ -104,14 +103,11 @@ const Starters = () => {
                   {titleText}
                 </h1>
                 <div className="lead">
-                  {path === '/administrador/entrantes' 
-                    ?  
-                      <Modify  dish={dish}/>
-                    : 
-                      dish.map((item, index) => (
-                        <Order key={index} dish={item} />
-                      )) 
-                  }
+                  {path === "/administrador/entrantes" ? (
+                    <Modify dish={dish} />
+                  ) : (
+                    dish.map((item, index) => <Order key={index} dish={item} />)
+                  )}
                 </div>
               </div>
             </div>

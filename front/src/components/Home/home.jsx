@@ -44,15 +44,6 @@ const Home = () => {
         </Fragment>
      );
 }
-
-
-/*<a 
-onClick={ () => history.push('/menu') }
-className="btn btn-success btnSize text-white">
-Ver el menú
-</a>*/
-
-
 Home.propTypes = {
     handleClickBtn: PropTypes.func,
     btnText: PropTypes.string

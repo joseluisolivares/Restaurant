@@ -15,12 +15,5 @@ const BtnDishes = ({handleClickDishes,name,btnText}) => {
     );
 }
 
-/** 
-<button onClick={(e) => this.handleClick(e)}>
-<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
- * 
-*/
-/*PROTOTYPES!!*/
-
 export default withRouter(BtnDishes);
 

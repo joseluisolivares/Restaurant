@@ -27,6 +27,16 @@ const Menu = () => {
   }
     return ( 
         <Fragment>
+            <button 
+                type="button" 
+                className="close w-100 text-right pt-2 text-black closeMenu" 
+                onClick={ () => history.goBack() }
+                aria-label="Close">
+                <span 
+                    aria-hidden="true">
+                    &times;
+                </span>
+            </button>
             <div className="container menuContainer">
                 <div className="boxItems d-flex flex-column align-items-center pt-5">
                     {btnDishes.map( (value) => (

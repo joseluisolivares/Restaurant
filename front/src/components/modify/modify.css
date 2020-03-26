@@ -12,5 +12,8 @@ input{
     margin:16px 0;
 }
 .btnModify{
-    margin: 16px 0;
+    margin: 10px 0;
+}
+.alertModify{
+    font-size: 15px;
 }

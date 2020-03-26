@@ -1,7 +1,8 @@
 import React, {Fragment, useState, useRef} from 'react';
 import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
-import BtnDishes from './btn/btnDishes';
+import BtnDishes from '../btn/btnDishes';
+import './admin.css';
 
 const Admin = () => {
     let history = useHistory();
@@ -15,7 +16,6 @@ const Admin = () => {
     let {user, password} = data;
     const handleChangeInput = (e) => {
         e.preventDefault();
-        console.log(e.target.name);
         setData({
             ...data,
             [e.target.name] : e.target.value
@@ -45,21 +45,26 @@ const Admin = () => {
         <Fragment>
             <div className="containerAdmin" ref={form}>
                 <form>
-                    <div className="form-group">
+                    <div className="form-group admin">
                         <label>User</label>
                         <input 
-                        type="email" 
-                        className="form-control" 
-                        id="exampleInputEmail1" 
-                        aria-describedby="emailHelp"
-                        name="user"
-                        onChange={handleChangeInput}/>
+                            type="email" 
+                            className="form-control inputAdmin" 
+                            id="exampleInputEmail1" 
+                            aria-describedby="emailHelp"
+                            name="user"
+                            onChange={handleChangeInput}
+                        />
                     </div>
                     <div className="form-group">
                         <label>Password</label>
-                        <input type="password" className="form-control" id="exampleInputPassword1"
-                        name="password"
-                        onChange={handleChangeInput}/>
+                        <input 
+                            type="password" 
+                            className="form-control inputAdmin" 
+                            id="exampleInputPassword1"
+                            name="password"
+                            onChange={handleChangeInput}
+                        />
                     </div>
                 </form>
                 <button className="btn btn-info" onClick={handleChangeInput}>{btnTextValidate}</button>
@@ -67,7 +72,7 @@ const Admin = () => {
             <div className="container adminContainer d-flex flex-column">
                 <button 
                     type="button" 
-                    className="close w-100 text-right pt-2 text-white" 
+                    className="close w-100 text-right pt-2 text-black closeAdmin" 
                     onClick={ () => history.goBack() }
                     aria-label="Close">
                     <span 

@@ -99,7 +99,7 @@ const Drinks = () => {
                 <h1 className="display-4 text-center pt-5 colorMainTitle">
                   {titleText}
                 </h1>
-                <p className="lead">
+                <div className="lead">
                   {path === '/administrador/bebidas' 
                       ?  
                         <Modify  dish={dish}/>
@@ -108,7 +108,7 @@ const Drinks = () => {
                           <Order key={index} dish={item} />
                         )) 
                   }
-                </p>
+                </div>
               </div>
             </div>
           </div>

@@ -23,15 +23,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     }
+.OrderContainer .orderText{
+    margin: 0 10px;
+    padding-bottom: 25px;
+}   
 .OrderContainerStarters{
     background-image: url(./images/starters.jpg);
 }
 .OrderContainerStarters .orderText{
     color: #000;
+    
 }
 .OrderContainer span{
     margin: 0;
-    padding: 0 10px 25px 10px;
     font-weight: 600;
     font-size: large;
 
@@ -54,9 +58,7 @@
     color:#fff;
     font-weight: 300;
 }
-.orderText span {
-    margin-right:10px;
-}
+
 .OrderContainerDrinks{
     background-image: url(./images/drinks.jpg);
 }

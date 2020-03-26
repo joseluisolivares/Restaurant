@@ -1,0 +1,10 @@
+.closeAdmin{
+    opacity:1;
+    color:#000;
+}
+.form-control.inputAdmin{
+    margin:5px;
+}
+.form-group.admin{
+    padding-top: 50px;
+}
