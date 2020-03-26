@@ -18,7 +18,9 @@ const Modify = ({ dish }) => {
       pathName = 'starters';
     }
     if(pathName === '/administrador/principales'){
-      pathName = 'principales';
+      pathName = 'maincourses';
+      console.log(postItem);
+      console.log('dentro de modify principales');
     }
     if(pathName === '/administrador/postres'){
       pathName = 'postres';

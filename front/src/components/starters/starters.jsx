@@ -104,15 +104,13 @@ const Starters = () => {
                   {titleText}
                 </h1>
                 <div className="lead">
-                {path === '/administrador/entrantes' 
-                  ?  
-                    
+                  {path === '/administrador/entrantes' 
+                    ?  
                       <Modify  dish={dish}/>
-                    
-                  : 
-                    dish.map((item, index) => (
-                      <Order key={index} dish={item} />
-                    )) 
+                    : 
+                      dish.map((item, index) => (
+                        <Order key={index} dish={item} />
+                      )) 
                   }
                 </div>
               </div>

@@ -2,17 +2,17 @@ import React, {Fragment,useState,useEffect} from 'react';
 import { useHistory } from "react-router-dom";
 import Card from '../cards/card';
 import Order from "../order/order";
+import Modify from "../modify/Modify";
 import './desserts.css';
 
 const Desserts = () => {
     const [desserts, setDesserts] = useState([]);
-    const [dish, setDish] = useState([]);
+    const [dish, setDish] = useState([""]);
     const orderText = "Ver postres seleccionados";
     const titleText = 'POSTRES';
     let history = useHistory();
     let path = history;
     path = path.location.pathname;
-	console.log(path);
         
     useEffect(() => {
         localStorage.setItem("order", JSON.stringify(dish));
@@ -32,8 +32,9 @@ const Desserts = () => {
                 abortController.abort()
               };
         },[]);
-    return ( 
-        <Fragment>
+
+  return ( 
+    <Fragment>
       <div className="container menuContainerCard">
         <header>
           <div className="row">
@@ -100,11 +101,16 @@ const Desserts = () => {
                 <h1 className="display-4 text-center pt-5 colorDessertTitle">
                   {titleText}
                 </h1>
-                <p className="lead">
-                  {dish.map((item, index) => (
-                    <Order key={index} dish={item} />
-                  ))}
-                </p>
+                <div className="lead">
+                {path === '/administrador/postres' 
+                    ?  
+                      <Modify  dish={dish}/>
+                    : 
+                      dish.map((item, index) => (
+                        <Order key={index} dish={item} />
+                      )) 
+                  }
+                </div>
               </div>
             </div>
           </div>

@@ -2,11 +2,12 @@ import React, { Fragment, useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Card from "../cards/card";
 import Order from "../order/order";
+import Modify from "../modify/Modify";
 import "./mainCourses.css";
 
 const MainCourses = () => {
   const [mainCourses, setMainCourses] = useState([]);
-  const [dish, setDish] = useState([]);
+  const [dish, setDish] = useState([""]);
   const orderText = "Ver Principales seleccionados";
   const titleText = 'PRINCIPALES';
   let history = useHistory();
@@ -73,7 +74,7 @@ const MainCourses = () => {
           data-toggle="modal"
           data-target="#exampleModal"
         >
-            {orderText}
+          {orderText}
         </button>
         <div
           className="modal fade"
@@ -99,11 +100,16 @@ const MainCourses = () => {
                 <h1 className="display-4 text-center pt-5 colorMainTitle">
                   {titleText}
                 </h1>
-                <p className="lead">
-                  {dish.map((item, index) => (
-                    <Order key={index} dish={item} />
-                  ))}
-                </p>
+                <div className="lead">
+                {path === '/administrador/principales' 
+                    ?  
+                      <Modify  dish={dish}/>
+                    : 
+                      dish.map((item, index) => (
+                        <Order key={index} dish={item} />
+                      )) 
+                }
+                </div>
               </div>
             </div>
           </div>

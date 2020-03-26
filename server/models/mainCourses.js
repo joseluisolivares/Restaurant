@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const mainCoursesSchema = new Schema({
     name:String,
-    price:String
+    price:String,
+    image:String
 },{
     versionKey:false
 });

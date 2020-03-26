@@ -2,11 +2,12 @@ import React, {Fragment,useState,useEffect} from 'react';
 import { useHistory } from "react-router-dom";
 import Card from '../cards/card';
 import Order from "../order/order";
+import Modify from "../modify/Modify";
 import './drinks.css';
 
 const Drinks = () => {
     const [drinks, setDrinks] = useState([]);
-    const [dish, setDish] = useState([]);
+    const [dish, setDish] = useState([""]);
     const orderText = "Ver bebidas seleccionados";
     const titleText = 'BEBIDAS';
     let history = useHistory();
@@ -99,9 +100,14 @@ const Drinks = () => {
                   {titleText}
                 </h1>
                 <p className="lead">
-                  {dish.map((item, index) => (
-                    <Order key={index} dish={item} />
-                  ))}
+                  {path === '/administrador/bebidas' 
+                      ?  
+                        <Modify  dish={dish}/>
+                      : 
+                        dish.map((item, index) => (
+                          <Order key={index} dish={item} />
+                        )) 
+                  }
                 </p>
               </div>
             </div>
