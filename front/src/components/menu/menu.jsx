@@ -29,8 +29,7 @@ const Menu = () => {
         <Fragment>
             <button 
                 type="button" 
-                className="
-                " 
+                className="menuClose" 
                 onClick={ () => history.goBack() }
                 aria-label="Close">
                 <span 

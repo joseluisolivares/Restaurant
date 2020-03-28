@@ -20,4 +20,13 @@
     right:10px;
     font-size: 30px;
 }
+.menuClose{
+    position: absolute;
+    color: #fff;
+    background: transparent;
+    border: none;
+    right: 20px;
+    width: 24px;
+    font-size: 35px;
+}
 
