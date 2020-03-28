@@ -127,6 +127,9 @@ db.drinks.updateOne({ name: "Coca cola" },{$set: { "price": "2.75€"},$currentD
 
 **Para borrar una colección.**
 db.admin.drop()
+
+
+
              
      
 

@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import PropTypes from "prop-types";
 import Card from "../cards/card";
 import Order from "../order/order";
 import Modify from "../modify/Modify";
@@ -119,5 +120,8 @@ const Starters = () => {
 };
 
 /*PROTOTYPES!!*/
-
+Starters.propTypes = {
+  setDish: PropTypes.func,
+  dish: PropTypes.array,
+}
 export default Starters;
