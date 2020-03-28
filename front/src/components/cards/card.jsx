@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import PropTypes from "prop-types";
 import "./card.css";
 import BtnAddItem from "../btn/btnAddItem";
 import BtnModifyItem from "../btn/btnModifyItem";
@@ -55,5 +56,11 @@ const Card = ({ value, dish, setDish }) => {
 };
 
 /*PROTOTYPES!!*/
-
+Card.propTypes = {
+  handleClickBtn: PropTypes.func,
+  setDish: PropTypes.func,
+  dish: PropTypes.array,
+  btnText: PropTypes.string,
+  styleBtn: PropTypes.string
+}
 export default Card;

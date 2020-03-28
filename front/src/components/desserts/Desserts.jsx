@@ -1,4 +1,5 @@
 import React, {Fragment,useState,useEffect} from 'react';
+import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
 import Card from '../cards/card';
 import Order from "../order/order";
@@ -121,6 +122,10 @@ const Desserts = () => {
 }
  
 /*PROTOTYPES!!*/
+Desserts.propTypes = {
+  setDish: PropTypes.func,
+  dish: PropTypes.array,
+}
 
 export default Desserts;
 
