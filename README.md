@@ -114,11 +114,7 @@
     Happy hacking ! 
 
 
-
-
-
-
-
+  **-----BONUS-----**
 
 **Para cambiar de nombre una coleción.**
 db.starters.renameCollection("maincourses") 
