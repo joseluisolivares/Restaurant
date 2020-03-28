@@ -3,7 +3,7 @@
 
 1- Elije un punto en tu equipo donde quieras alojar el proyecto, por ejemplo en 'Documentos'.
 2- Una vez hayas elegido el lugar, abre una consola en ese punto.
-3- Tienes que clonarte mi proyecto, para ello escribe en la consola: git clone https://github.com/joseluisolivares/RestaurantApp.git
+3- Tienes que clonarte mi proyecto, para ello escribe en la consola: git clone https://github.com/joseluisolivares/Restaurant.git
 4- Ya tienes clonado mi proyecto, ahora debes crearte la BBDD.
 5- Crear la bbdd
     5.1 => Instalar Mongodb.
@@ -29,13 +29,6 @@
 
     5.6 => Para crear la colección de mainCourses escribe en consola: 
 
-
-
-
-         
-
-
-
         db.maincourses.insert({"name" : "Ostras al natural o con salsa ponzu","price" : "19.90€","image" : "https://media.timeout.com/images/103339718/630/472/image.jpg"})
 
         db.maincourses.insert({"name" : "Salpicón de bogavante","price" : "23.90€","image" : "https://s1.eestatic.com/2017/12/29/cocinillas/Cocinillas_273234737_116459622_1024x576.jpg"})
@@ -52,8 +45,6 @@
 
         db.maincourses.insert({"name" : "Tiradito de pez limón a la miel, salsa de ostras y pisco","price" : "28.90€","image":"https://live.mrf.io/statics/i/ps/www.ecestaticos.com/imagestatic/clipping/9db/0e3/9db0e3c77efb3a5c4f5a1a6e2ece3028/ruta-por-13-de-los-mejores-ceviches-de-madrid.jpg?mtime=1579565836"})
 
-        db.maincourses.insert({"name" : "Ceviche de corvina salvaje","price" : "18.70€", "image", "5e7489086ed2564677c7a4bd"})
-
         db.maincourses.insert({"name" : "Ceviche de langosta","price" : "33.90€", "image" : "https://4.bp.blogspot.com/-0UGYKJlIgro/UgJrbir9s7I/AAAAAAAAAbQ/fBqzIscUwm4/s1600/ceviche_camaron.jpg"})
 
         db.maincourses.insert({"name" : "Carpaccio de lomo de vaca madurada","price" : "23.90€", "image":"https://www.codigococina.com/wp-content/uploads/2016/12/como_hacer_carpaccio.jpg"})
@@ -68,20 +59,18 @@
 
     5.7 => Para crear la colección de dessserts escribe en consola: 
 
-
-
-
-
-
-
         db.desserts.insert({"name" : "Tarta de queso","price" : "6.90€", "image":"https://www.lolitalapastelera.com/wp-content/uploads/Galeria-5-76-680x1020.jpg"})
+
         db.desserts.insert({"name" : "Volcán de dulce de leche","price" : "7.90€", "image":"https://placeralplato.com/files/2018/06/Volcn-de-dulce-de-leche.jpg"})
+
         db.desserts.insert({"name" : "Key lime pie","price" : "9.90€", "image":"https://www.livewellbakeoften.com/wp-content/uploads/2019/12/Key-Lime-Pie-2.jpg"})
+
         db.desserts.insert({"name" : "Mousse de chocolate","price" : "5.50€", "image":"https://okdiario.com/img/recetas/2017/09/28/tarta-mousse-de-chocolate.jpg"})
 
+    
      5.8 => Para crear la colección de dessserts escribe en consola: 
 
-     db.drinks.update({_id: ObjectId("5e74b3376b40f21f84cfb307")},{$set:{image:"https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/24/00118650500038____1__600x600.jpg"}})
+        db.drinks.update({_id: ObjectId("5e74b3376b40f21f84cfb307")},{$set:{image:"https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/24/00118650500038____1__600x600.jpg"}})
 
         db.drinks.insert({"name" : "Coca cola","price" : "2.5€","image":"https://www.encopadebalon.com/3507-thickbox_default/coca-cola-pack-24-botellas-20cl.jpg"})
 
@@ -101,52 +90,31 @@
 
         db.drinks.insert({"name" : "Marqués de Murrieta Capellanía","price" : "27€","image":"https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201611/02/00113349000052____4__640x640.jpg"})
 
-         db.drinks.insert({"name" : "Muga Crianza","price" : "31€","image":"https://www.decantalo.com/352635-product_default/muga-crianza.jpg"})
+        db.drinks.insert({"name" : "Muga Crianza","price" : "31€","image":"https://www.decantalo.com/352635-product_default/muga-crianza.jpg"})
 
-         db.drinks.insert({"name" : "Emilio Moro","price" : "29€","image":"https://cdn2.mundovinum.com/4216-large_default/emilio-moro-2017.jpg"})
+        db.drinks.insert({"name" : "Emilio Moro","price" : "29€","image":"https://cdn2.mundovinum.com/4216-large_default/emilio-moro-2017.jpg"})
 
-         db.drinks.insert({"name" : "Saint Joseph La Source","price" : "41€","image":"https://www.binnys.com/media/catalog/product/cache/eab16ae251e4410504af434c6d9419db/9/7/974797.jpg"})
+        db.drinks.insert({"name" : "Saint Joseph La Source","price" : "41€","image":"https://www.binnys.com/media/catalog/product/cache/eab16ae251e4410504af434c6d9419db/9/7/974797.jpg"})
 
-         db.drinks.insert({"name" : "Mahou 5 estrellas","price" : "2.5€","image":"https://birrapedia.prevista.net/modulos/market/7c/43/mahou-5--estrellas-1-3-no-ret-caja-24-botellas-15471209364717-g.jpg"})
+        db.drinks.insert({"name" : "Mahou 5 estrellas","price" : "2.5€","image":"https://birrapedia.prevista.net/modulos/market/7c/43/mahou-5--estrellas-1-3-no-ret-caja-24-botellas-15471209364717-g.jpg"})
 
-         db.drinks.insert({"name" : "Estrella Galicia 1906","price" : "3.5€","image":"https://www.encopadebalon.com/4990-large_default/cerveza-estrella-galicia-1906-pack-24-unidades-33cl.jpg"})
+        db.drinks.insert({"name" : "Estrella Galicia 1906","price" : "3.5€","image":"https://www.encopadebalon.com/4990-large_default/cerveza-estrella-galicia-1906-pack-24-unidades-33cl.jpg"})
 
-         db.drinks.insert({"name" : "Alhambra 1925","price" : "3.5€","image":"https://www.encopadebalon.com/3542-large_default/cerveza-alhambra-reserva-1925-pack-24-botellas.jpg"})
+        db.drinks.insert({"name" : "Alhambra 1925","price" : "3.5€","image":"https://www.encopadebalon.com/3542-large_default/cerveza-alhambra-reserva-1925-pack-24-botellas.jpg"})
 
-        db.manage.insert({"name" : "admin","password" : "huecas"})
+    5.9 => Para crear la colección de admin escribe en consola: 
 
+        db.admin.insert({"name" : "admin","password" : "huecas"})
 
-    
-6- Ahora vamos a crearnos el entorno para conectar la api con la BBDD.
-7- Abrimos nuestro editor de texto  o IDE favorito y creamos una carpeta con el name de nuestra app, aquí vamos a alojar nuestro proyecto.
-8- Como nuestro proyecto va a ser un proyecto que se va a basar en Node, lo primero es escribir en consola: npm init.
-9- Con el paso anterior hemos creado el archivo package.json, es la configuración básica de nuestro proyecto.
-10- Ahora vamos a instalar a través de npm, mongoose y express.
-11- Escribir en consola: npm install mongoose
-12- Escribir en consola: npm install express
-13- Si estás usando la consola de tu IDE o editor de texto es posible que te devuelva un error tipo:  Error: EPERM: operation not permitted. No te preocupes, abre el proyecto con la consola de tu sistema operativo y vuelve a instalar.
-14- Si todo ha salido bien, en tu archivo package.json debe haberse añadido express y mongoose como dependencias.
-15- Creamos un archivo llamado .gitignore y escribimos: node_modules/  esto es para cuando subamos commits no se suba el archivo node_modules, que como puedes ver tiene muchísimos archivos.
-16- Creamos una carpeta llamada api, aquí vamos a tener todo lo relacionado con nuestra api. 
-17- Creamos carpeta llamada config, aquí vamos a tener la configuración general de la bbdd y la de la api.
-18- Dentro de config creamos dos archivos: apiConfig.js y dbConfig.js aquí vamos a tener las configuraciones generales de la api y de mongo.
-19- Todo en Mongoose comienza con un esquema. Cada esquema se asigna a una colección MongoDB y define la forma de los documentos dentro de esa colección.
-20- Creamos una carpeta llamada models y dentro de este dos archivos, uno por cada colección, en este caso: desserts.js, drinks.js, mainCourses.js, starters.js y admin
-21- Creamos los esquemas.
-22- 
+    Ejecuta el comando => npm install
+
+    Ahora levanta tu proyecto. Por un lado abre una consola en la carpeta 'server' y ejecuta el comando 'node api.js' y por otro abre otra consola en la carpeta front y escribe 'npm start'.   
+    Con esto levantas la BBDD y el front con React.
+
+    Happy hacking ! 
 
 
-
-
-
-db.admin.insert({"name" : "admin","password" : "huecas"})
-
-
-
-
-
-
-
+  **-----BONUS-----**
 
 **Para cambiar de nombre una coleción.**
 db.starters.renameCollection("maincourses") 
